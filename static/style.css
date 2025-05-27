@@ -1,0 +1,228 @@
+:root {
+	--primary-color: #0078bf;
+	--secondary-color: #28a745;
+	--light-color: #f8f9fa;
+	--dark-color: #343a40;
+	--border-radius: 15px;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(to right, #e6f7ff, #f0f8ff, #e6f7ff);
+}
+
+.chat {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.card {
+	height: 85vh;
+	border-radius: var(--border-radius) !important;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	background-color: rgba(255, 255, 255, 0.95) !important;
+	border: none !important;
+}
+
+.card-header {
+	border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+	border-bottom: 0 !important;
+	background: var(--primary-color) !important;
+	color: white;
+	padding: 1rem;
+}
+
+.card-footer {
+	border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+	border-top: 0 !important;
+	background-color: #f8f9fa;
+	padding: 1rem;
+}
+
+.user_info h4 {
+	font-size: 1.2rem;
+	margin-bottom: 0.2rem;
+	font-weight: 600;
+}
+
+.user_info p {
+	font-size: 0.9rem;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 0;
+}
+
+.msg_card_body {
+	overflow-y: auto;
+	background-color: #f5f8fa;
+	padding: 1.5rem;
+}
+
+.msg_cotainer {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 10px;
+	border-radius: 20px;
+	background-color: var(--primary-color);
+	color: white;
+	padding: 12px 15px;
+	position: relative;
+	max-width: 75%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.msg_cotainer_send {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 10px;
+	border-radius: 20px;
+	background-color: var(--secondary-color);
+	color: white;
+	padding: 12px 15px;
+	position: relative;
+	max-width: 75%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.msg_time {
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 10px;
+}
+
+.msg_time_send {
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 10px;
+}
+
+.img_cont {
+	position: relative;
+	height: 50px;
+	width: 50px;
+}
+
+.img_cont_msg {
+	height: 40px;
+	width: 40px;
+}
+
+.online_icon {
+	position: absolute;
+	height: 12px;
+	width: 12px;
+	background-color: #4cd137;
+	border-radius: 50%;
+	bottom: 0;
+	right: 0;
+	border: 1.5px solid white;
+}
+
+.user_img {
+	height: 50px;
+	width: 50px;
+	border: 1.5px solid white;
+	border-radius: 50%;
+	background-color: white;
+	padding: 2px;
+}
+
+.user_img_msg {
+	height: 40px;
+	width: 40px;
+	border: 1.5px solid white;
+	border-radius: 50%;
+	background-color: white;
+	padding: 1px;
+}
+
+.type_msg {
+	background-color: white !important;
+	border: 1px solid #e6e6e6 !important;
+	color: #333 !important;
+	height: 60px !important;
+	overflow-y: auto;
+	border-radius: 20px 0 0 20px !important;
+	padding-left: 15px;
+}
+
+.type_msg:focus {
+	box-shadow: none !important;
+	border-color: var(--primary-color) !important;
+}
+
+.send_btn {
+	border-radius: 0 20px 20px 0 !important;
+	background-color: var(--primary-color) !important;
+	border: 0 !important;
+	color: white !important;
+	cursor: pointer;
+	height: 60px;
+}
+
+.send_btn i {
+	font-size: 1.2rem;
+}
+
+.mb-4 {
+	margin-bottom: 2rem !important;
+}
+
+/* Welcome message styling */
+.welcome-message .msg_cotainer {
+	background-color: #4a6da7;
+}
+
+/* Typing indicator */
+.typing-indicator {
+	background-color: #e6e6e6;
+	color: #666;
+}
+
+.typing-dots {
+	display: inline-block;
+	animation: dotTyping 1.5s infinite;
+}
+
+@keyframes dotTyping {
+	0% { content: "."; }
+	25% { content: ".."; }
+	50% { content: "..."; }
+	75% { content: ".."; }
+	100% { content: "."; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.card {
+		height: 90vh;
+		margin: 10px;
+	}
+	
+	.msg_cotainer, .msg_cotainer_send {
+		max-width: 85%;
+	}
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #ccc;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #999;
+}
