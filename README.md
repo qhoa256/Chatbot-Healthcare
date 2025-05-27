@@ -76,7 +76,7 @@ source healthcare_chatbot_env/bin/activate
 #### Sử dụng Conda
 ```bash
 # Tạo môi trường Conda
-conda create --name healthcare_chatbot_env python=3.8
+conda create --name healthcare_chatbot_env python=3.10
 
 # Kích hoạt môi trường
 conda activate healthcare_chatbot_env
@@ -116,6 +116,7 @@ conda deactivate
 - `Training_model.ipynb`: Notebook huấn luyện mô hình LSTM
 
 ## Lưu ý
+- Bắt buộc sử dụng Python 3.10
 - Mô hình đã được huấn luyện trên bộ dữ liệu hạn chế, nên câu trả lời chỉ mang tính chất tham khảo
 - Không nên sử dụng chatbot này để thay thế tư vấn y tế chuyên nghiệp
 - Khi gặp vấn đề sức khỏe nghiêm trọng, hãy luôn tham khảo ý kiến của bác sĩ
